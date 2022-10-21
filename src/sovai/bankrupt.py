@@ -16,9 +16,9 @@ class Bankrupt():
             else:
                 raise(Exceptions.ErrSubCommandNotFound)
 
-    def __call__(self, *args: Any, **kwds: Any) -> Any:
+    def __call__(self, *args, **kwds):
         pass
-    
+
     def bankrupt_info(self, *args, **kwargs):
         if self.INFO:
             pass

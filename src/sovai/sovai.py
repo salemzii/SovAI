@@ -23,6 +23,10 @@ class SoviaClient():
         if command == Command.BANKRUPT and len(args) > 0:
             return Bankrupt(args=args)
 
-
+"""
+    instantiate a new sovia client with api key;
+    the get command accepts a command from the command class and return an instance of the command class 
+    passing any amount of subcommands for that class as arguments to the __init__() method.
+"""
 sovia = SoviaClient(api_key="")
 
